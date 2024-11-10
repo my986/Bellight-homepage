@@ -7,6 +7,64 @@
     <!-- fullPage.js の CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* ヘッダーのスタイル */
+        header {
+            background-color: #111;
+            padding: 10px 20px;
+            border-bottom: 2px solid #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .game-title {
+            max-width: 70%;
+            height: auto;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ddd;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #fff;
+        }
+
+        /* レスポンシブ対応 */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                height: auto;
+                padding: 20px;
+                text-align: center;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
 </head>
 <body>
     <div id="fullpage">
@@ -14,7 +72,14 @@
         <div class="section" id="section1">
             <header>
                 <img src="images/game-title.png" alt="ゲームタイトル" class="game-title">
-                <p>キャッチコピー: あなたの冒険が今始まる！</p>
+                <nav>
+                    <ul>
+                        <li><a href="#section1">ホーム</a></li>
+                        <li><a href="#section2">ゲーム紹介</a></li>
+                        <li><a href="#section3">紹介動画</a></li>
+                        <li><a href="#section4">フッター</a></li>
+                    </ul>
+                </nav>
             </header>
         </div>
 
@@ -48,5 +113,15 @@
     <!-- fullPage.js の JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            new fullpage('#fullpage', {
+                autoScrolling: true,
+                navigation: true,
+                navigationPosition: 'right',
+                scrollOverflow: true,
+            });
+        });
+    </script>
 </body>
 </html>
