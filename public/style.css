@@ -1,45 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #000;
     color: #ddd;
-    text-align: center;
-    margin: 0;
-    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.section {
+    height: 100vh; /* 画面全体にフィット */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 header {
     background-color: #111;
-    padding: 20px;
-    border-bottom: 2px solid #333;
+    color: #f5a623;
 }
 
 .game-title {
     max-width: 80%;
     height: auto;
-    margin-bottom: 10px;
 }
 
 .intro-section {
-    padding: 40px 20px;
     background-color: #111;
-    margin-bottom: 30px;
-    border-radius: 8px;
-}
-
-.intro-section h2 {
-    color: #f5a623;
-    margin-bottom: 15px;
-}
-
-.intro-section p {
-    line-height: 1.8;
-    color: #eee;
-    max-width: 800px;
-    margin: 0 auto;
 }
 
 .video-section {
-    margin-top: 30px;
+    background-color: #222;
 }
 
 video {
@@ -52,8 +48,4 @@ video {
 footer {
     background-color: #111;
     color: #888;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
