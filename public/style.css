@@ -1,71 +1,70 @@
-/* ヘッダーのスタイル */
-header {
-    background-color: #111;
-    padding: 10px 20px;
-    border-bottom: 2px solid #333;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-    position: fixed; /* ヘッダーを固定 */
-    top: 0; /* ページ上部に固定 */
-    left: 0;
+.header-5 {
+    box-sizing: border-box;
     width: 100%;
-    z-index: 1000; /* 他の要素より前面に表示 */
-}
-
-.game-title {
-    max-width: 70%;
-    height: auto;
-}
-
-/* ナビゲーション */
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  }
+  
+  .header-inner {
     display: flex;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #ddd;
-    text-decoration: none;
+    align-items: center;
+    max-width: 1024px;
+    height: 60px;
+    padding: 0 0.8em;
+    margin: 0 auto;
     font-size: 1.2em;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #fff;
-}
-
-/* コンテンツのスタイル */
-.section {
-    padding-top: 100px; /* ヘッダー分のスペースを確保 */
-}
-
-/* レスポンシブ対応 */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        height: auto;
-        padding: 20px;
-        text-align: center;
+  }
+  
+  .header-nav-list {
+    display: inline-block;
+  }
+  
+  .header-nav-item {
+    float: left;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ccc;
+    text-align: center;
+    list-style: none;
+  }
+  
+  .header-nav-item a {
+    text-decoration: none;
+  }
+  
+  .header-ham {
+    display: none;
+  }
+  
+  .menu2 {
+    width: 20px;
+    height: 3px;
+    margin: 4px 0;
+    margin-right: 0;
+    background-color: #333;
+  }
+  
+  .select {
+    color: #444;
+  }
+  
+  .header-nav-item:hover {
+    background: #eee;
+  }
+  
+  .logo img {
+    width: 70px;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .header-nav-list {
+      display: none;
     }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
+  
+    .header-nav {
+      margin: 0 0 0 auto;
     }
-
-    nav ul li {
-        margin: 10px 0;
+  
+    .header-ham {
+      display: block;
     }
-
-    .section {
-        padding-top: 120px; /* モバイル端末では少し余白を増やす */
-    }
-}
+  }

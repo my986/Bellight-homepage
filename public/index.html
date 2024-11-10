@@ -1,142 +1,29 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ゲーム紹介サイト</title>
-    <!-- fullPage.js の CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.css">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        /* ヘッダーのスタイル */
-        header {
-            background-color: #111;
-            padding: 10px 20px;
-            border-bottom: 2px solid #333;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 80px;
-            position: fixed; /* ヘッダーを固定 */
-            top: 0; /* ページ上部に固定 */
-            left: 0;
-            width: 100%;
-            z-index: 1000; /* 他の要素より前面に表示 */
-        }
-
-        .game-title {
-            max-width: 70%;
-            height: auto;
-        }
-
-        /* ナビゲーション */
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
-        nav ul li {
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            color: #ddd;
-            text-decoration: none;
-            font-size: 1.2em;
-            transition: color 0.3s ease;
-        }
-
-        nav ul li a:hover {
-            color: #fff;
-        }
-
-        /* コンテンツのスタイル */
-        .section {
-            padding-top: 100px; /* ヘッダー分のスペースを確保 */
-        }
-
-        /* レスポンシブ対応 */
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                height: auto;
-                padding: 20px;
-                text-align: center;
-            }
-
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            nav ul li {
-                margin: 10px 0;
-            }
-
-            .section {
-                padding-top: 120px; /* モバイル端末では少し余白を増やす */
-            }
-        }
-    </style>
+    <title>Document</title>
 </head>
 <body>
-    <div id="fullpage">
-        <!-- ヘッダーセクション -->
-        <div class="section" id="section1">
-            <header>
-                <img src="images/game-title.png" alt="ゲームタイトル" class="game-title">
-                <nav>
-                    <ul>
-                        <li><a href="#section1">ホーム</a></li>
-                        <li><a href="#section2">ゲーム紹介</a></li>
-                        <li><a href="#section3">紹介動画</a></li>
-                        <li><a href="#section4">フッター</a></li>
-                    </ul>
-                </nav>
-            </header>
+    <header class="header-5">
+        <div class="header-inner">
+          <div class="logo">
+            <img src="https://see-ss.com/img/logo@2x.png" />
+          </div>
+          <nav class="header-nav">
+            <ul class="header-nav-list">
+              <a href="#"><li class="header-nav-item select">About</li></a>
+              <a href="#"><li class="header-nav-item">Works</li></a>
+              <a href="#"><li class="header-nav-item">Contact</li></a>
+            </ul>
+            <div class="header-ham">
+              <div class="menu2"></div>
+              <div class="menu2"></div>
+              <div class="menu2"></div>
+            </div>
+          </nav>
         </div>
-
-        <!-- ゲーム紹介文セクション -->
-        <div class="section" id="section2">
-            <section class="intro-section">
-                <h2>ゲームの紹介</h2>
-                <p>このゲームは、冒険とスリルに満ちた世界へプレイヤーを誘います。ユニークなキャラクターとストーリーが織りなす壮大な冒険を体験してください。</p>
-            </section>
-        </div>
-
-        <!-- 紹介動画セクション -->
-        <div class="section" id="section3">
-            <section class="video-section">
-                <h2>紹介動画</h2>
-                <video controls>
-                    <source src="images/Bellight_ルール動画.mp4" type="video/mp4">
-                    お使いのブラウザは動画をサポートしていません。
-                </video>
-            </section>
-        </div>
-
-        <!-- フッターセクション -->
-        <div class="section" id="section4">
-            <footer>
-                © 2024 ゲーム紹介サイト
-            </footer>
-        </div>
-    </div>
-
-    <!-- fullPage.js の JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js"></script>
-    <script src="script.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            new fullpage('#fullpage', {
-                autoScrolling: true,
-                navigation: true,
-                navigationPosition: 'right',
-                scrollOverflow: true,
-            });
-        });
-    </script>
+      </header>
 </body>
 </html>
