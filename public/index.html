@@ -1,210 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Font Awesome Link moved to head -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <style>
-        /* Example CSS for sections and layout */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        header {
-            background-color: #333;
-            padding: 20px;
-            color: white;
-        }
-
-        .nav-wrap {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .top_nav {
-            list-style: none;
-            display: flex;
-            padding: 0;
-            margin: 0;
-        }
-
-        .top_nav li {
-            margin: 0 15px;
-        }
-
-        .top_nav li a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.1em;
-        }
-
-        .top_nav li a:hover {
-            color: #f39c12;
-        }
-
-        .leftnav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            background-color: #222;
-            color: white;
-            width: 200px;
-            height: 100%;
-            padding-top: 20px;
-        }
-
-        .leftnav-listing {
-            list-style: none;
-            padding: 0;
-        }
-
-        .leftnav-listing li {
-            margin: 20px 0;
-        }
-
-        .leftnav-listing li a {
-            color: white;
-            text-decoration: none;
-            padding: 10px;
-            display: block;
-        }
-
-        .leftnav-listing li a:hover {
-            background-color: #f39c12;
-        }
-
-        section {
-            padding: 100px 20px;
-            height: 100vh;
-        }
-
-        .vh {
-            min-height: 100vh;
-        }
-
-        .yellow {
-            background-color: yellow;
-        }
-
-        .aqua {
-            background-color: aqua;
-        }
-
-        .pink {
-            background-color: pink;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        /* Mobile-first hamburger menu */
-        @media (max-width: 768px) {
-            .nav-wrap {
-                display: none;
-            }
-
-            .nav-button {
-                display: block;
-                cursor: pointer;
-            }
-
-            #nav-toggle:checked + .top_nav {
-                display: block;
-            }
-
-            .top_nav {
-                display: none;
-                position: absolute;
-                top: 60px;
-                right: 10px;
-                background-color: #333;
-                padding: 10px;
-                border-radius: 5px;
-                width: 200px;
-            }
-
-            .top_nav li {
-                margin: 10px 0;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ゲーム紹介</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header id="site-header" class="header">
-        <div class="container">
-            <nav>
-                <div class="logo" tabindex="1">Logo</div>
-                <div class="nav-wrap">
-                    <!-- Hamburger Menu Toggle -->
-                    <div class="nav-button">
-                        <label for="nav-toggle">
-                            <span class="before"></span>
-                        </label>
-                        <input type="checkbox" id="nav-toggle" hidden>
-                    </div>
-                    <ul class="top_nav">
-                        <li><a href="https://www.awwwards.com/">Home</a></li>
-                        <li>
-                            <a href="https://www.awwwards.com/">Services</a>
-                            <ul class="sub-nav">
-                                <li><a href="https://www.google.com/">Jamstack</a></li>
-                                <li><a href="#!">Wordpress</a></li>
-                                <li>
-                                    <a href="https://stackoverflow.com/">Assets</a>
-                                    <ul class="sub-nav">
-                                        <li><a href="https://www.google.com/">Blog</a></li>
-                                        <li><a href="#!">Docs</a></li>
-                                        <li><a href="https://stackoverflow.com/">Knowledge</a></li>
-                                        <li><a href="#!">Logs</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#!">Custom</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </header>
 
-    <!-- Left Navigation -->
-    <div class="leftnav">
-        <ul class="leftnav-listing">
-            <li><a href="#One">Section 1</a></li>
-            <li><a href="#Two">Section 2</a></li>
-            <li><a href="#Three">Section 3</a></li>
-            <li><a href="#Four">Section 4</a></li>
-            <li><a href="#Five">Section 5</a></li>
-        </ul>
+  <header>
+    <div class="logo-container">
+      <img src="logo.png" alt="ゲームタイトル" class="logo">
     </div>
+    <nav>
+      <ul>
+        <li><a href="#home">ホーム</a></li>
+        <li><a href="#about">ゲーム紹介</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Main Content Sections -->
-    <section class="vh yellow" id="One"><span>Sections 1</span></section>
-    <section class="vh" id="Two"><span>Sections 2</span></section>
-    <section class="vh aqua" id="Three"><span>Sections 3</span></section>
-    <section class="vh" id="Four"><span>Sections 4</span></section>
-    <section class="vh pink" id="Five"><span>Sections 5</span></section>
+  <main>
+    <section id="home">
+      <h1>ようこそゲームへ</h1>
+      <p>ゲームの説明がここに表示されます。</p>
+    </section>
+    <section id="about">
+      <h1>ゲームの特徴</h1>
+      <p>ゲームの詳細情報がここに表示されます。</p>
+    </section>
+    <section id="contact">
+      <h1>お問い合わせ</h1>
+      <p>連絡先情報がここに表示されます。</p>
+    </section>
+  </main>
 
-    <!-- Footer -->
-    <footer class="site-footer">
-        <h2>Footer Content</h2>
-    </footer>
+  <script src="script.js"></script>
 </body>
 </html>
