@@ -3,8 +3,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000;
-    color: #fff;
+    background-color: #000; /* 背景色を黒に設定 */
+    color: #fff; /* テキスト色を白に設定 */
   }
   
   header {
@@ -12,7 +12,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #111;
+    background-color: #000; /* ヘッダーの背景色も黒に設定 */
   }
   
   .logo-container {
@@ -20,8 +20,8 @@ body {
   }
   
   .logo {
-    width: 150px; /* ロゴのサイズを調整 */
-    height: auto;
+    width: 100px; /* ロゴを小さく表示 (元々のサイズに合わせて調整) */
+    height: auto; /* アスペクト比を保つ */
   }
   
   nav ul {
@@ -54,7 +54,7 @@ body {
     }
   
     .logo {
-      width: 120px; /* 小さな画面ではロゴを小さくする */
+      width: 80px; /* 小さな画面ではさらにロゴを小さく */
     }
   
     nav ul {
