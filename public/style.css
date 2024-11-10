@@ -9,23 +9,23 @@ body {
 
 header {
     background-color: #111;
-    padding: 20px; /* ヘッダーのパディングを少し増やす */
+    padding: 10px 20px; /* 上下のパディングを減らして余白を調整 */
     border-bottom: 2px solid #333;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 130px; /* ヘッダーの高さを広げる */
+    height: 120px; /* ヘッダーの高さを調整 */
 }
 
 .game-title {
     max-width: 70%;
     height: auto;
-    margin-bottom: 10px; /* 余白を調整 */
+    margin-bottom: 8px; /* タイトル画像の余白を少し減らす */
 }
 
 header p {
-    font-size: 1rem; /* キャッチコピーのフォントサイズを元に戻す */
+    font-size: 1rem;
 }
 
 .intro-section {
