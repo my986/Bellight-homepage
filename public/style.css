@@ -2,56 +2,35 @@ body {
     font-family: Arial, sans-serif;
     background-color: #000;
     color: #ddd;
-    text-align: center;
     margin: 0;
     padding: 0;
 }
 
 header {
     background-color: #111;
-    padding: 10px 20px; /* 上下のパディングを減らして余白を調整 */
+    padding: 10px 20px;
     border-bottom: 2px solid #333;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 120px; /* ヘッダーの高さを調整 */
+    height: 120px;
 }
 
 .game-title {
     max-width: 70%;
     height: auto;
-    margin-bottom: 8px; /* タイトル画像の余白を少し減らす */
-}
-
-header p {
-    font-size: 1rem;
+    margin-bottom: 10px;
 }
 
 .intro-section {
     padding: 40px 20px;
     background-color: #111;
-    margin-bottom: 30px;
+    margin: 0 auto;
     border-radius: 8px;
 }
 
-.intro-section h2 {
-    color: #f5a623;
-    margin-bottom: 15px;
-}
-
-.intro-section p {
-    line-height: 1.8;
-    color: #eee;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.video-section {
-    margin-top: 30px;
-}
-
-video {
+.video-section video {
     width: 80%;
     max-width: 600px;
     border: 3px solid #444;
@@ -61,8 +40,6 @@ video {
 footer {
     background-color: #111;
     color: #888;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding: 20px;
+    text-align: center;
 }

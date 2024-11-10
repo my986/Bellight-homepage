@@ -3,36 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bellight</title>
+    <title>ゲーム紹介サイト</title>
+    <!-- fullPage.js の CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="images/game-title.png" alt="ゲームタイトル" class="game-title">
-    </header>
+    <div id="fullpage">
+        <!-- ヘッダーセクション -->
+        <div class="section" id="section1">
+            <header>
+                <img src="images/game-title.png" alt="ゲームタイトル" class="game-title">
+                <p>キャッチコピー: あなたの冒険が今始まる！</p>
+            </header>
+        </div>
 
-    <main>
         <!-- ゲーム紹介文セクション -->
-        <section class="intro-section">
-            <h2>遊びの概要</h2>
-            <p>Bellightはとても面白い遊びです!</p>
-        </section>
+        <div class="section" id="section2">
+            <section class="intro-section">
+                <h2>ゲームの紹介</h2>
+                <p>このゲームは、冒険とスリルに満ちた世界へプレイヤーを誘います。ユニークなキャラクターとストーリーが織りなす壮大な冒険を体験してください。</p>
+            </section>
+        </div>
 
-        <!--紹介動画セクション-->
-        <section class="video-section">
-            <h2>紹介動画</h2>
-            <video controls>
-                <source src="images/Bellight_ルール動画.mp4" type="video/mp4">
-                お使いのブラウザは動画をサポートしていません。
-            </video>
-        </section>
-    </main>
+        <!-- 紹介動画セクション -->
+        <div class="section" id="section3">
+            <section class="video-section">
+                <h2>紹介動画</h2>
+                <video controls>
+                    <source src="images/Bellight_ルール動画.mp4" type="video/mp4">
+                    お使いのブラウザは動画をサポートしていません。
+                </video>
+            </section>
+        </div>
 
-    <footer>
-        © 2024 Bellight
-    </footer>
+        <!-- フッターセクション -->
+        <div class="section" id="section4">
+            <footer>
+                © 2024 ゲーム紹介サイト
+            </footer>
+        </div>
+    </div>
 
+    <!-- fullPage.js の JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
-

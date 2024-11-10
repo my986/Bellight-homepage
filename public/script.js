@@ -1,3 +1,8 @@
-document.addEventListener('DOMContentLoaded', () => {
-    console.log("サイトが読み込まれました");
+document.addEventListener("DOMContentLoaded", function () {
+    new fullpage('#fullpage', {
+        autoScrolling: true,
+        navigation: true,
+        navigationPosition: 'right',
+        scrollOverflow: true,
+    });
 });
