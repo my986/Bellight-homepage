@@ -17,6 +17,11 @@
             justify-content: space-between;
             align-items: center;
             height: 80px;
+            position: fixed; /* ヘッダーを固定 */
+            top: 0; /* ページ上部に固定 */
+            left: 0;
+            width: 100%;
+            z-index: 1000; /* 他の要素より前面に表示 */
         }
 
         .game-title {
@@ -24,6 +29,7 @@
             height: auto;
         }
 
+        /* ナビゲーション */
         nav ul {
             list-style-type: none;
             margin: 0;
@@ -46,6 +52,11 @@
             color: #fff;
         }
 
+        /* コンテンツのスタイル */
+        .section {
+            padding-top: 100px; /* ヘッダー分のスペースを確保 */
+        }
+
         /* レスポンシブ対応 */
         @media (max-width: 768px) {
             header {
@@ -62,6 +73,10 @@
 
             nav ul li {
                 margin: 10px 0;
+            }
+
+            .section {
+                padding-top: 120px; /* モバイル端末では少し余白を増やす */
             }
         }
     </style>
