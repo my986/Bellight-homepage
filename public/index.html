@@ -3,39 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ゲーム紹介</title>
+  <title>紹介サイト</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <header>
-    <div class="logo-container">
-      <img src="images/game-title.png" alt="ゲームタイトル" class="logo">
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#home">ホーム</a></li>
-        <li><a href="#about">ゲーム紹介</a></li>
-        <li><a href="#contact">お問い合わせ</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section id="home">
-      <h1>ようこそゲームへ</h1>
-      <p>ゲームの説明がここに表示されます。</p>
+  <div class="container">
+    <header>
+      <h1>ゲーム紹介</h1>
+    </header>
+    <section class="content">
+      <p class="intro-text">こちらは新しいゲームの紹介です。楽しいゲームプレイをお楽しみください。</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="poster">
+        <img src="your-poster-image.jpg" alt="ポスター画像">
+      </div>
+      <a href="https://your-other-url.com" class="cta-button">さらに詳しく</a>
     </section>
-    <section id="about">
-      <h1>ゲームの特徴</h1>
-      <p>ゲームの詳細情報がここに表示されます。</p>
-    </section>
-    <section id="contact">
-      <h1>お問い合わせ</h1>
-      <p>連絡先情報がここに表示されます。</p>
-    </section>
-  </main>
-
-  <script src="script.js"></script>
+  </div>
 </body>
 </html>

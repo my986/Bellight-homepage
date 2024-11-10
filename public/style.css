@@ -1,69 +1,58 @@
-/* 全体設定 */
-body {
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styles */
+  body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #000; /* 背景色を黒に設定 */
-    color: #fff; /* テキスト色を白に設定 */
-  }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #000; /* ヘッダーの背景色も黒に設定 */
-  }
-  
-  .logo-container {
-    flex-shrink: 0;
-  }
-  
-  .logo {
-    width: 100px; /* ロゴを小さく表示 (元々のサイズに合わせて調整) */
-    height: auto; /* アスペクト比を保つ */
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  nav ul li {
-    margin-left: 20px;
-  }
-  
-  nav ul li a {
+    background-color: #000;
     color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .intro-text {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .video-container iframe {
+    width: 100%;
+    height: 315px;
+    margin-bottom: 20px;
+  }
+  
+  .poster img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
     text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
   }
   
-  nav ul li a:hover {
-    color: #ff6347; /* ホバー時の色変更 */
-  }
-  
-  /* レスポンシブ対応 */
-  @media (max-width: 768px) {
-    header {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .logo {
-      width: 80px; /* 小さな画面ではさらにロゴを小さく */
-    }
-  
-    nav ul {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    nav ul li {
-      margin: 10px 0;
-    }
+  .cta-button:hover {
+    background-color: #cc5200;
   }
   
